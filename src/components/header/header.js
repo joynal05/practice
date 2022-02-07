@@ -1,7 +1,8 @@
-import "./header.css"
+import "./header.css";
+import { Link } from "react-router-dom";
 
 
-const Header = ({setLoginUser}) => {
+const Header = () => {
     return(
 
         <header>
@@ -13,12 +14,9 @@ const Header = ({setLoginUser}) => {
                         </div>
                     </div>
                     <div className="col">
-                        <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Contact</li>
-                            <li>Blog</li>
-                        </ul>
+                        
+
+
                     </div>
                     <div className="col">
                         <div className="work">Works</div>
