@@ -1,0 +1,16 @@
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.col {
+    flex-basis: 100%;
+    padding: 0 15px;
+}
