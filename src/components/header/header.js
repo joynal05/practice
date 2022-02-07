@@ -12,6 +12,7 @@
                     <li>About</li>
                     <li>Contact</li>
                     <li>Blog</li>
+                    <li>Test</li>
                 </ul>
             </div>
             <div className="col">
