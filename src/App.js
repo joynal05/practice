@@ -1,11 +1,14 @@
-import ASD from './cc/asd';
+import Header from "./components/header/header";
+import Body from "./components/body/body";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <ASD></ASD>
-      </header>
+      <Header></Header>
+      <Body></Body>
+      <Footer></Footer>
+
     </div>
   );
 }
