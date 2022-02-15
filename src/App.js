@@ -1,4 +1,5 @@
 import './common.css'
+import { useState, useEffect } from 'react';
 
 function App() {
 
@@ -11,11 +12,13 @@ function App() {
 
     if(timeOn){
       timeCount = setInterval(() => {
-        setTime = setTime + 10;
+        setTime( x => x + 10 );
       }, 10);
     }else{
       clearInterval (timeCount);
     }
+
+    return () => clearInterval (timeCount);
 
     
   }, [timeOn]);
@@ -23,7 +26,15 @@ function App() {
 
   return (
     <div className="App">
-      
+      <div className="stop-watch">
+        <span>{time}</span>
+
+    <br />
+        <button onClick={ () => setTimeOn(true) }>start</button>
+        <button onClick={ () => setTimeOn(false) }>stop</button>
+        <button onClick={ () => setTimeOn(true) }>resume</button>
+        <button onClick={ () => setTime(0) }>reset</button>
+      </div>
 
     </div>
   );
